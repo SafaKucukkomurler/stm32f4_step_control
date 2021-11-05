@@ -1,0 +1,2 @@
+stepperMotor.c:3:6:stepperMotorMove	8	static
+stepperMotor.c:64:6:HAL_TIM_PWM_PulseFinishedCallback	0	static

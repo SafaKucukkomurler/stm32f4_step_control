@@ -1,0 +1,6 @@
+uartDriver.c:3:6:USART1_IRQHandler	0	static
+uartDriver.c:42:6:USART_SendByte	0	static
+uartDriver.c:54:9:USART_IsBuffEmpty	0	static
+uartDriver.c:66:9:USART_ReadByte	0	static
+uartDriver.c:86:10:USART_BytesToRead	0	static
+uartDriver.c:98:6:USART_SendByteArray	16	static
