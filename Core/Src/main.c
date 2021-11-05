@@ -144,14 +144,14 @@ int localmotor1intFlag=0, localmotor2intFlag=0, localmotor3intFlag=0;
 	  if (localmotor1intFlag==1)
 	  {
 		  motor1intFlag = 0;
-		  stepperMotors[0].stepCounter++;			// her kesmede sayaci arttir.
-		  if(stepperMotors[0].stepCounter == stepperMotors[0].step)		// eger sayac istenilen adim sayisi kadar artmis ise
+		  stepperMotors[0].stepCounter++;			
+		  if(stepperMotors[0].stepCounter == stepperMotors[0].step)		
 		  {
 			  //HAL_TIM_PWM_Stop_IT(&htim3,TIM_CHANNEL_1);	// PWM'i durdur.
 			  TIM3->CCER &= (~TIM_CCER_CC1E);
-			  stepperMotors[0].stepCounter = 0;// bir sonraki komutta sayac sifirdan baslamali
-			  stepperMotors[0].state = 0;	// step fonksiyonunun içindeki while döngüsünden çikilmasi için
-			  stepperMotors[0].step = 0;		   // durum degiskeni sifirlandi.
+			  stepperMotors[0].stepCounter = 0;
+			  stepperMotors[0].state = 0;	
+			  stepperMotors[0].step = 0;		   
 		  }
 		  else
 		  {
